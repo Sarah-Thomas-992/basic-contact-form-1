@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
 
 body{
-  background: rgb(236, 216, 147);
+  background: rgb(235, 234, 229);
   display: flex;
   justify-content: center;
 }
@@ -105,20 +105,19 @@ body{
 img{
   width: 100%;
   padding-top: 30px;
+  max-height: 100vh;
 }
 
-#formio{ 
+#formio{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#formio,
+p { 
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-}
-
-.choices__item{
-  background-color: white;
-}
-
-.choices__placeholder{  
-    opacity: 1;
-    color: grey;
 }
 
 #formio .formio-component{
@@ -129,9 +128,9 @@ img{
   margin-bottom: 20px;
 }
 
-/* .hide{
+.hide{
   display: none;
-} */
+}
 
 
 
@@ -216,6 +215,7 @@ img{
   content: " ";
   display: table;
 }
+
 
 .clearfix::after {
   clear: both;

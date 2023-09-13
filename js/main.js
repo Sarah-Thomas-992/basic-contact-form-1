@@ -1,1 +1,1 @@
-Formio.createForm(document.getElementById('formio'), 'https://hikbeodwymyczgq.form.io/physicaltherapyintake');
+const thankYou = document.getElementById('thank-you');

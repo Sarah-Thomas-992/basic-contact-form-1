@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="stylesheet" href="https://cdn.form.io/formiojs/formio.form.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.form.io/formiojs/formio.full.min.css">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -23,9 +23,17 @@
 <body>
 
 <div class="content-wrapper">
-  <img src="img/alfred-schrock-gdUbO8rDZLo-unsplash.jpg" alt="A pile of white pumpkins with one colorful one in the center"> 
-  <div id="formio"></div>
-  <script src="https://cdn.form.io/formiojs/formio.form.min.js" crossorigin="anonymous"></script>
+  <img src="img/contact.jpg" alt="A row of mailboxes"> 
+  <div id="formio">
+    <script type="text/javascript">
+      window.onload = function() {
+        Formio.createForm(document.getElementById('formio'), 'https://hikbeodwymyczgq.form.io/basiccontact');
+      };
+    </script>
+  </div>
+  <div id="thank-you" class="hide">
+    <p>Thank you! Your response has been recorded. Please exit this window now.</p>
+  </div>
 </div>
 
 
@@ -33,6 +41,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.form.io/formiojs/formio.full.min.js"></script>
 
 
 
